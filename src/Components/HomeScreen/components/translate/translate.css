@@ -1,0 +1,202 @@
+:root{
+    --translate-h2-color: rgb(7, 195, 7);
+    --translate-p-color: rgb(6, 174, 62);
+    --translate-bgColor: white;
+    --trans-border-color: rgb(157, 156, 156);
+}
+.translate{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 65vh;
+    background: var(--translate-bgColor);
+}
+.translate .header{
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+    margin-bottom: 1.2rem;
+}
+.translate .header h2{
+    color: var(--translate-h2-color);
+    margin-left: .8rem;
+    font-weight: 600;
+}
+.translate .options{
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 1.2rem;
+}
+.translate .option{
+    width: 15%;
+    display: flex;
+    justify-content: center;
+    margin-left: .8rem;
+    padding: .3rem;
+    border-radius: .6rem;
+    border: 1px solid var(--trans-border-color);
+    cursor: pointer;
+    transition: 3s;
+}
+.translate .option:hover{
+    background: #a9f2ae;
+}
+.translate .option:first-child{
+    background: #a9f2ae;
+}
+.translate .option span{
+    color: var(--translate-p-color);
+    font-weight: 400;
+    font-size: 1.2rem;
+}
+.translate .select-language{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1.2rem;
+}
+.translate .select-language .select{
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    padding: .3rem;
+    margin: .8rem;
+    border-radius: .6rem;
+    border: 2px solid var(--trans-border-color);
+}
+.translate .select-language .select select{
+    width: 80%;
+    color: #575857;
+    font-weight: 400;
+    font-size: 1.2rem;
+    border: none;
+    outline: none;
+}
+.translate .select-language .transIcon{
+    width: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5rem;
+    cursor: pointer;
+}
+.translate .box{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom: 1.0rem;
+}
+.translate .box .box1{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    padding: .8rem;
+    border-radius: .9rem;
+    border: 2px solid var(--trans-border-color);
+}
+.translate .box .box1 .text{
+    width: 100%;
+    height: 24vh;
+}
+.translate .box .box1 .text textarea{
+    resize: none;
+    width: 99%;
+    color: gray;
+    font-size: 1.0rem;
+    border: none;
+    outline: none;
+}
+.translate .box .box1 .details{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.translate .box .box1 .details .speaker{
+    width: 40%;
+    cursor: pointer;
+}
+.translate .box .box1 .details .info{
+    display: flex;
+    justify-content: flex-end;
+    width: 40%;
+}
+.translate .box .box1 .details .info span{
+    background: whitesmoke;
+}
+.translate .box .box2{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    padding: .8rem;
+    background: whitesmoke;
+    border-radius: .9rem;
+}
+
+.translate .box .box2 .text-trans{
+    width: 100%;
+    height: 24vh;
+    display: flex;
+}
+.translate .box .box2 .text-trans textarea{
+    resize: none;
+    width: 100%;
+    color: gray;
+    font-size: 1.0rem;
+    border: none;
+    outline: none;
+}
+.translate .box .box2 .details{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.translate .box .box2 .details .speaker{
+    width: 40%;
+    cursor: pointer;
+}
+.translate .box .box2 .details .speaker i{
+    cursor: pointer;
+}
+.translate .box .box2 .details .info{
+    display: flex;
+    justify-content: flex-end;
+    width: 40%;
+}
+.translate .box .box2 .details .info i{
+    cursor: pointer;
+}
+@media only screen and (max-width: 600px){
+    .translate{
+        height: 93vh;
+    }
+    .translate .option{
+        width: 30%;
+    }
+    .translate .option span{
+        font-size: .9rem;
+    }
+    .translate .select-language .select{
+        width: 40%;
+    }
+    .translate .select-language .select select{
+        font-size: .9rem;
+    }
+    .translate .select-language .transIcon{
+        height: 50%;
+        margin-top: .9rem;
+    }
+    .translate .box{
+        display: block;
+    }
+    .translate .box .box1{
+        width: 95%;
+        margin: 0 .4rem .8rem .6rem;
+    }
+    .translate .box .box2{
+        width: 95%;
+        margin: 0 .4rem .8rem .6rem;
+    }
+    
+}

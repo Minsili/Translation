@@ -1,0 +1,130 @@
+:root{
+    --footer-h3-color: rgb(20, 241, 20);
+    --footer-p-color: rgb(52, 132, 80);
+    --footer-bgColor: rgb(225, 245, 245);
+}
+.footer{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    background: var(--footer-bgColor);
+  
+}
+.footer .col1{
+    width: 30%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.footer .col1 .row{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: .8rem;
+}
+.footer .col1 .row h3{
+    color: var(--footer-h3-color);
+    margin-top: .4rem;
+}
+.footer .col1 .row p{
+    color: var(--footer-p-color);
+    font-weight: 500;
+    cursor: pointer;
+    transition: .3s;
+}
+.footer .col1 .row p:hover{
+    border-bottom: 3px solid var(--footer-p-color); 
+}
+.footer .col2{
+    width: 30%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.footer .col2 .row h3{
+    color: var(--footer-h3-color);
+    margin-top: .4rem;
+}
+.footer .col2 .row p{
+    color: var(--footer-p-color);
+    font-weight: 500;
+    transition: .3s;
+    cursor: pointer;
+}
+.footer .col2 .row p:hover{
+    border-bottom: 3px solid var(--footer-p-color); 
+}
+.footer .col2 .row{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: .8rem;
+}
+.footer .col3{
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.footer .col3 .row1{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 1.0rem;
+}
+.footer .col3 .row1 .logo{
+    display: flex;
+    align-items: center;
+    width: 30%;
+}
+.footer .col3 .row1 .logo img{
+    border-radius: 5rem;
+    width: 60%;
+}
+.footer .col3 .row2{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+.footer .col3 .row2 .link{
+    display: flex;
+    align-items: center;
+    width: 30%;
+}
+.footer .col3 .row2 .link i{
+    border-radius: 5rem;
+    width: 30%;
+}
+.footer .col4{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.footer .col4 .end{
+    display: flex;
+    justify-content: center;
+    width: 70%;
+    margin: .9rem;
+    padding: .8rem;
+    border-top: 4px solid var(--footer-p-color);
+}
+.footer .col4 .end p{
+    color: var(--footer-p-color);
+    font-weight: 400;
+}
+@media only screen and (max-width: 600px) {
+    .footer .col1{
+        display: none;
+    }
+    .footer .col2{
+        display: none;
+    }
+    .footer .col3{
+        display: none;
+    }
+    .footer .col4 .end{
+        border-top: 2px solid var(--footer-p-color);
+    }
+}
